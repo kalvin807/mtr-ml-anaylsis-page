@@ -501,24 +501,36 @@
             class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
           ></div>
 
-          <div class="w-full md:w-1/4 p-6 flex flex-col flex-shrink">
-            <div
-              class="flex-none mt-auto bg-white rounded-t rounded-b-none overflow-hidden shadow"
-            >
-              <img
-                class="object-cover w-full h-64"
-                src="imgs/bio/reynold.jpg"
-              />
+          <div class="px-32 sm:px-64 py-8 mx-auto flex flex-col flex-shrink">
+            <div class="flex flex-col sm:flex-row justify-between items-center">
+              <p class="my-2 text-3xl font-bold">Project Plan</p>
+              <button
+                class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg"
+              >
+                Download
+              </button>
             </div>
-            <div class="flex-1 bg-white rounded-b rounded-t-none shadow">
-              <div class="flex flex-wrap no-underline hover:no-underline">
-                <p class="w-full text-gray-600 text-xs md:text-sm px-6 pt-3">
-                  Interim report
-                </p>
-                <div class="w-full font-bold text-xl text-gray-800 px-6 pb-3">
-                  Coming Soon
-                </div>
-              </div>
+            <div
+              class="h-1 mx-auto gradient w-full opacity-25 my-0 py-0 rounded-t"
+            ></div>
+            <div class="flex flex-col sm:flex-row justify-between items-center">
+              <p class="my-2 text-3xl font-bold">Interim report</p>
+              <button
+                class="mx-auto lg:mx-0 hover:underline opacity-50 cursor-not-allowed bg-gray-400 text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg"
+              >
+                Download
+              </button>
+            </div>
+            <div
+              class="h-1 mx-auto gradient w-full opacity-25 my-0 py-0 rounded-t"
+            ></div>
+            <div class="flex flex-col sm:flex-row justify-between items-center">
+              <p class="my-2 text-3xl font-bold">Final report</p>
+              <button
+                class="mx-auto lg:mx-0 hover:underline opacity-50 cursor-not-allowed bg-gray-400 text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg"
+              >
+                Download
+              </button>
             </div>
           </div>
         </div>
@@ -564,35 +576,19 @@
 
     <footer>
       <div class="container mx-auto flex flex-col sm:flex-row">
-        <div class="flex-auto">
-          <p class="uppercase md:mb-6">Links</p>
-          <ul class="list-reset mb-6">
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a
-                href="#"
-                class="no-underline hover:underline hover:text-orange-500"
-                >Github</a
-              >
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a
-                href="#"
-                class="no-underline hover:underline hover:text-orange-500"
-                >HKU CS homepage</a
-              >
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a
-                href="#"
-                class="no-underline hover:underline hover:text-orange-500"
-                >MTR homepage</a
-              >
-            </li>
-          </ul>
+        <div class="flex-1 text-sm pt-2 pb-8 px-3">
+          MTR System Map and MTR Logo from MTR website
+          <br />
+          MTRC train data analysis: A machine learning approach
+          <br />
+          COMP4801 2019-20 Final Year Project
+          <br />
+          Department of Computer Science, Faculty of Engineering, The University
+          of Hong Kong
         </div>
-        <div class="flex-auto">
+        <div class="flex-1 w-full pt-2 pb-8 px-3">
           <img
-            class="object-center border rounded bg-white shadow-lg p-2 w-64"
+            class="object-cover mx-auto my-auto border rounded bg-white shadow-lg p-2 w-64"
             src="imgs/hkucs_logo.png"
           />
         </div>
@@ -629,7 +625,6 @@
             toToggle[i].classList.add("text-white");
             toToggle[i].classList.remove("text-gray-800");
           }
-
           header.classList.remove("shadow");
           navcontent.classList.remove("bg-white");
           navcontent.classList.remove("text-black");
